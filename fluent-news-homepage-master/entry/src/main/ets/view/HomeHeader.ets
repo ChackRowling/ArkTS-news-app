@@ -24,6 +24,7 @@ export struct HomeHeader {
   @StorageLink('currentBreakpoint') currentBreakpoint: string = BreakpointConstants.BREAKPOINT_LG;
   @StorageLink('topRectHeight') topRectHeight: number = CommonConstants.ZERO;
   @StorageProp('local') location: string = '';
+  @StorageLink('searchKeyword') searchKeyword: string = '';
 
   build() {
     Column() {
@@ -67,7 +68,7 @@ export struct HomeHeader {
         })
 
       Stack({ alignContent: Alignment.Start }) {
-        TextInput({ placeholder: $r('app.string.search_text') })
+        TextInput({ text: this.searchKeyword, placeholder: $r('app.string.search_text') })
           .placeholderFont({
             size: $r('app.float.search_input_font'),
             weight: FontWeight.Normal
@@ -83,6 +84,9 @@ export struct HomeHeader {
           .border({ width: $r('app.string.text_input_border') })
           .width($r('app.string.home_header_stack_width'))
           .enableKeyboardOnFocus(false)
+          .onChange((value: string) => {
+            this.searchKeyword = value;
+          })
 
         // Search image.
         Image($r('app.media.ic_public_search'))
