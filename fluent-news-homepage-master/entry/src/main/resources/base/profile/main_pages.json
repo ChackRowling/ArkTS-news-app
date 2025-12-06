@@ -1,6 +1,8 @@
 {
   "src": [
     "pages/Index",
-    "pages/CitySearch"
+    "pages/CitySearch",
+    "pages/Login",
+    "pages/Register"
   ]
 }

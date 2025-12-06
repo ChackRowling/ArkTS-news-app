@@ -24,6 +24,7 @@ import { BreakpointConstants } from '../constants/BreakpointConstants';
 import { CommonConstants } from '../constants/CommonConstants';
 import { Home } from '../view/Home';
 import { i18n } from '@kit.LocalizationKit';
+import { userAuthUtil } from '../utils/UserAuthUtil';
 
 // [Start location_change]
 // Index.ets
@@ -60,11 +61,18 @@ let locationChange: (err: BusinessError, location: geoLocationManager.Location) 
 @Component
 struct Index {
   @StorageLink('currentBreakpoint') currentBreakpoint: string = BreakpointConstants.BREAKPOINT_LG;
+  @StorageProp('isLoggedIn') isLoggedIn: boolean = false;
   @State status: boolean = true;
 
   // [Start on_page_show]
   // Index.ets
-  onPageShow(): void {
+  async onPageShow() {
+    // 检查登录状态（不强制跳转，允许未登录用户浏览）
+    const context = this.getUIContext().getHostContext();
+    if (context) {
+      await userAuthUtil.checkLoginStatus(context);
+    }
+
     abilityAccessCtrl.createAtManager().requestPermissionsFromUser(this.getUIContext().getHostContext(), [
       'ohos.permission.LOCATION', 'ohos.permission.APPROXIMATELY_LOCATION']).then(() => {
       if (this.status) {
