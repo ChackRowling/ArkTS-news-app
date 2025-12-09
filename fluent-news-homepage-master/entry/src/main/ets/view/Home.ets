@@ -23,6 +23,7 @@ import { CommonConstants } from '../constants/CommonConstants';
 import { ResourceUtil } from '../utils/ResourceUtil';
 import { BlankView } from './BlankView';
 import { HomeContent } from './HomeContent';
+import { MyProfileView } from './MyProfileView';
 import { ConfigurationConstant } from '@kit.AbilityKit';
 import { ComponentContent } from '@kit.ArkUI';
 
@@ -118,7 +119,7 @@ export struct Home {
         .tabBar(this.tabBarOption2)
 
         TabContent() {
-          BlankView()
+          MyProfileView()
         }
         .tabBar(this.tabBarOption3)
 

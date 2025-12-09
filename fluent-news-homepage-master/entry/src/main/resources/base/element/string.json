@@ -175,6 +175,190 @@
     {
       "name": "tab_bar_type8",
       "value": "Finance and Economics"
+    },
+    {
+      "name": "login_title",
+      "value": "登录"
+    },
+    {
+      "name": "register_title",
+      "value": "注册"
+    },
+    {
+      "name": "username_placeholder",
+      "value": "请输入用户名"
+    },
+    {
+      "name": "password_placeholder",
+      "value": "请输入密码"
+    },
+    {
+      "name": "email_placeholder",
+      "value": "请输入邮箱（可选）"
+    },
+    {
+      "name": "confirm_password_placeholder",
+      "value": "请确认密码"
+    },
+    {
+      "name": "login_button",
+      "value": "登录"
+    },
+    {
+      "name": "register_button",
+      "value": "注册"
+    },
+    {
+      "name": "no_account",
+      "value": "还没有账号？"
+    },
+    {
+      "name": "register_link",
+      "value": "立即注册"
+    },
+    {
+      "name": "have_account",
+      "value": "已有账号？"
+    },
+    {
+      "name": "login_link",
+      "value": "立即登录"
+    },
+    {
+      "name": "empty_fields",
+      "value": "请填写完整信息"
+    },
+    {
+      "name": "login_success",
+      "value": "登录成功"
+    },
+    {
+      "name": "login_failed",
+      "value": "用户名或密码错误"
+    },
+    {
+      "name": "login_error",
+      "value": "登录失败，请重试"
+    },
+    {
+      "name": "register_success",
+      "value": "注册成功，请登录"
+    },
+    {
+      "name": "register_failed",
+      "value": "用户名已存在，请更换"
+    },
+    {
+      "name": "register_error",
+      "value": "注册失败，请重试"
+    },
+    {
+      "name": "username_required",
+      "value": "请输入用户名"
+    },
+    {
+      "name": "password_length_error",
+      "value": "密码长度至少6位"
+    },
+    {
+      "name": "password_mismatch",
+      "value": "两次输入的密码不一致"
+    },
+    {
+      "name": "logout_button",
+      "value": "退出登录"
+    },
+    {
+      "name": "logout_success",
+      "value": "已退出登录"
+    },
+    {
+      "name": "account_settings",
+      "value": "资料设置"
+    },
+    {
+      "name": "save_settings",
+      "value": "保存设置"
+    },
+    {
+      "name": "change_avatar",
+      "value": "更换头像"
+    },
+    {
+      "name": "username_label",
+      "value": "用户名"
+    },
+    {
+      "name": "email_label",
+      "value": "邮箱"
+    },
+    {
+      "name": "change_password_title",
+      "value": "修改密码"
+    },
+    {
+      "name": "current_password",
+      "value": "当前密码"
+    },
+    {
+      "name": "current_password_placeholder",
+      "value": "请输入当前密码"
+    },
+    {
+      "name": "new_password",
+      "value": "新密码"
+    },
+    {
+      "name": "new_password_placeholder",
+      "value": "请输入新密码（至少6位）"
+    },
+    {
+      "name": "confirm_new_password",
+      "value": "确认新密码"
+    },
+    {
+      "name": "save_success",
+      "value": "保存成功"
+    },
+    {
+      "name": "save_failed",
+      "value": "保存失败，请重试"
+    },
+    {
+      "name": "save_error",
+      "value": "保存出错"
+    },
+    {
+      "name": "no_changes",
+      "value": "没有修改任何信息"
+    },
+    {
+      "name": "current_password_required",
+      "value": "修改密码需要输入当前密码"
+    },
+    {
+      "name": "avatar_selection_coming_soon",
+      "value": "头像选择功能即将推出"
+    },
+    {
+      "name": "change_password_button",
+      "value": "修改密码"
+    },
+    {
+      "name": "cancel",
+      "value": "取消"
+    },
+    {
+      "name": "confirm_change_password",
+      "value": "确认修改"
+    },
+    {
+      "name": "password_change_success",
+      "value": "密码修改成功"
+    },
+    {
+      "name": "password_change_failed",
+      "value": "密码修改失败"
     }
   ]
 }
